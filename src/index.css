@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::-webkit-scrollbar{
+  display: none;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Rubik", sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+#root {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eeeeee;
+}
+.todolistSec {
+  width: 300px;
+  height: 400px;
+  background-color: #4ae3b5;
+  box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.header {
+  width: 100%;
+  height: 50px;
+  background-color: #181534;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 10px;
+  font-size: 15px;
+  text-align: center;
+  color: #eeeeee;
+}
+.header i {
+  font-size: 20px;
+}
+.header h1 {
+  font-weight: 400;
+  width: 100%;
+}
+.addBtn {
+  padding: 10px 18px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  background-color: #181534;
+  color: #eeeeee;
+  font-weight: 600;
+  border: 1px solid #181534;
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 10px 22px -10px #4ae3b5;
+  z-index: 1;
+}
+.addBtn:hover {
+  background-color: #eeeeee;
+  color: #181534;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.listDiv {
+  width: 100%;
+  height: auto;
+  background-color: #4ae3b5;
+  display: grid;
+  gap: 5px;
+  padding: 10px;
+  overflow-y: scroll;
+  max-height: 350px;
+}
+
+.listDiv span {
+  height: 45px;
+  border-left: 5px solid #2c5e69;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 5px;
+  color: #181534;
+  overflow: hidden;
+}
+.listDiv span h3 {
+  display: flex;
+  gap: 5px;
+  font-size: 17px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 20ch;
+
+}
+.listDiv span h2{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+i:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+.listDiv i {
+  font-size: 15px;
+  cursor: pointer;
+}
+.inputListDiv{
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  height: 70px;
+  background-color: #2c5e69;
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+}
+.inputListDiv input{
+  width: 100%;
+  padding: 4px;
+  border-radius: 4px;
+  background-color:#eeeeee;
+  color: #181534a8;
+  font-weight: bold;
+  border: 1px solid #4ae3b5;
+
+}
