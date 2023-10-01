@@ -98,7 +98,7 @@ const App = () => {
           <i>
             <RiMenu2Line />
           </i>
-          <h1>Website todo App</h1>
+          <h1>To DO APP</h1>
         </div>
         <div className="listDiv">{ListComponentMap}</div>
         <button
